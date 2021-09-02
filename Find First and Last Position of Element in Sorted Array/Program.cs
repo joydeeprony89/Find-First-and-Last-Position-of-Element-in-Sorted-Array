@@ -14,10 +14,10 @@ namespace Find_First_and_Last_Position_of_Element_in_Sorted_Array
         static int[] SearchRange(int[] nums, int target)
         {
             int[] result = new int[2];
-            result[0] = FindPosition(nums, target);
-            result[1] = FindPosition(nums, target, false);
-            //result[0] = FindLeft(nums, target);
-            //result[1] = FindRight(nums, target);
+            //result[0] = FindPosition(nums, target);
+            //result[1] = FindPosition(nums, target, false);
+            result[0] = FindLeft(nums, target);
+            result[1] = FindRight(nums, target);
             return result;
         }
 
